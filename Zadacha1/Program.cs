@@ -6,10 +6,11 @@
 
 Console.WriteLine("Введите трехзначное число");
 int A = Convert.ToInt32(Console.ReadLine());
-if (A > 99 || A < 1000 || A<-99 || A>-1000)
+if (A > 99 && A < 1000 || A<-99 && A>-1000)
 {
     int B = A/10%10;
-    Console.WriteLine($"Вторая цифра введенного числа это {B}");
+    int H = Math.Abs(B);
+    Console.WriteLine($"Вторая цифра введенного числа это {H}");
 }
 
 else
