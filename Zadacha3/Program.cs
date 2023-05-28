@@ -13,7 +13,13 @@ if (A==6 || A==7)
     Console.WriteLine("Братишка, сегодня выходной");
 
 }
-else
+else if (A>0 && A<6)
 {
     Console.WriteLine("Ну какой выходной ты чего...сегодня среда...или четверг, я хз");
+}
+else
+{
+    
+    Console.WriteLine("Здесь что то не так");
+
 }
